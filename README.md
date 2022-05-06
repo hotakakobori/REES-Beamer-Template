@@ -7,7 +7,7 @@ This is a repository that stores an easy-to-implement beamer template themed for
 
 1. - [ ] Install R/R Studio
 
-2. - [ ] Download the folder 
+2. - [ ] Download the "REES beamer" folder 
 
 3. - [ ] Open "rmd" file in R/R Studio
 
