@@ -1,0 +1,45 @@
+\usetheme[]{Madrid}
+ % Alternatively: miniframes, infolines, split
+\useinnertheme{circles}
+
+\definecolor{ualberta}{RGB}{0,124,65}
+\setbeamercolor{structure}{fg=ualberta}
+
+\setbeamertemplate{navigation symbols}{%
+\insertslidenavigationsymbol
+\insertframenavigationsymbol
+\insertsubsectionnavigationsymbol
+\insertsectionnavigationsymbol
+\insertdocnavigationsymbol
+\insertbackfindforwardnavigationsymbol
+}
+\mode<beamer>{\setbeamertemplate{blocks}[rounded][shadow=true]}
+\setbeamercovered{transparent}
+\setbeamercolor{block body example}{fg=blue, bg=black!20}
+
+\useoutertheme{miniframes}
+
+
+\institute[REES]{Supervised by \href{https://scholar.google.ca/citations?user=PmlfbK8AAAAJ&hl=en&oi=ao}{Professor Brent Swallow} and \href{https://scholar.google.ca/citations?user=6HdoCygAAAAJ&hl=en&oi=ao}{Professor Feng Qiu} \and \href{https://www.ualberta.ca/resource-economics-environmental-sociology/index.html}{Department of \textbf{R}esource \textbf{E}conomics and \textbf{E}nvironmental \textbf{S}ociology} \and ~ \and Our fullworking paper can be retrieved from here}
+
+\addtobeamertemplate{title page}{}{\begin{center}\tiny{\emph{"The University of Alberta acknowledges that we are located on Treaty 6 territory, and respects the histories, languages, and cultures of First Nations, Métis, Inuit, and all First Peoples of Canada, whose presence continues to enrich our vibrant community."
+}}\end{center}}
+
+\titlegraphic{
+    \includegraphics[width=4cm]{logo.jpg}}
+    
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+
+\usepackage{tikz}
+\usetikzlibrary{snakes}
+\usepackage{rotating}
+\usepackage{chronology}
+\usepackage{xcolor}
+
+
+\definecolor{links}{HTML}{0000FF}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}

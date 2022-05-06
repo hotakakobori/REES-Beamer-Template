@@ -1,0 +1,315 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  9pt,
+  ignorenonframetext,
+  compress]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usefonttheme{serif}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Your Presentation Title Here e.g.~Why REES is Best?},
+  pdfauthor={Your Name},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\input{REES beamer.tex}
+\AtBeginDocument{\title[Why REES ?]{Your Presentation Title Here e.g. Why REES is Best?}}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Your Presentation Title Here e.g.~Why REES is Best?}
+\subtitle{Your Presentation Subtitle Here}
+\author{Your Name}
+\date{06 May, 2022}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Outline}
+\protect\hypertarget{outline}{}
+\label{agenda}
+
+\textbf{Disclaimer/Announcement}\\
+
+\begin{itemize}
+\tightlist
+\item
+  Mention what needs to be announced beforehand\\
+
+  \begin{itemize}
+  \tightlist
+  \item
+    e.g.~all views/opinions presented are personal\\
+  \end{itemize}
+\end{itemize}
+
+\textbf{Contents}
+
+\begin{enumerate}
+\item
+  Executive Summary \hyperlink{1}{\beamergotobutton{ESummary}}\\
+\item
+  Motivation \hyperlink{2}{\beamergotobutton{Motivation}}\\
+\item
+  Method \hyperlink{3}{\beamergotobutton{Method}}\\
+\item
+  Result \hyperlink{4}{\beamergotobutton{Result}}\\
+\item
+  Conclusion \hyperlink{5}{\beamergotobutton{Conclusion}}\\
+\item
+  Reference \hyperlink{6}{\beamergotobutton{Reference}}\\
+\end{enumerate}
+
+\hfill\break
+
+\begin{center}
+\emph{Note} you can also jump to by clicking top bar 
+\end{center}
+\end{frame}
+
+\hypertarget{executive-summary}{%
+\section{Executive Summary}\label{executive-summary}}
+
+\begin{frame}{Executive Summary}
+\begin{itemize}
+\item
+  This is an easy-to-implement template REES students can use to
+  present.
+\item
+  This is an introduction to Rmarkdown.
+\end{itemize}
+\end{frame}
+
+\hypertarget{motivation-put-title-of-this-section-here}{%
+\section{Motivation (Put title of this section
+here)}\label{motivation-put-title-of-this-section-here}}
+
+\begin{frame}{Motivation (Put title of this section here)}
+\begin{itemize}
+\item
+  e.g.~REES can be more famous !
+\item
+  This is a list/item
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This is a sub item
+  \end{itemize}
+\end{itemize}
+
+\begin{enumerate}
+\tightlist
+\item
+  This is a numbered list
+\item
+  You can also show one by one called \emph{increment}
+\end{enumerate}
+
+\begin{enumerate}[<+->]
+\setcounter{enumi}{2}
+\item
+  See ?
+\item
+  This is increment
+\item
+  Note page number does not change?!
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+You can also \textbf{bolden} or \emph{italize} and such
+
+See
+\href{https://bookdown.org/yihui/rmarkdown/beamer-presentation.html}{this
+page for more}
+\end{frame}
+
+\hypertarget{method}{%
+\section{Method}\label{method}}
+
+\begin{frame}{You can also draw}
+\protect\hypertarget{you-can-also-draw}{}
+\begin{center}
+    \begin{tikzpicture}
+        % draw horizontal line   
+        \draw (-5,0) -- (6,0);
+        % draw vertical lines
+    \foreach \x in {-5,-4,-3,-2, -1,0,1,2,3,6}
+    \draw (\x cm,2pt) -- (\x cm,-2pt);
+     % draw nodes
+    \draw (-5,0) node[below=3pt] {$ 21.12 $} node[above=3pt] {$\begin{turn}{45} Task A \end{turn}$};
+    \draw (-4,0) node[below=3pt] {$ 22.1 $} node[above=3pt] {$\tiny \begin{turn}{75} Task B1, Task B2, Task B3 etc.. \end{turn}$};
+    \draw (-3,0) node[below=3pt] {$ 2 $} node[above=3pt] {$\begin{turn}{45} Task C \end{turn}$};
+    \draw (-2,0) node[below=3pt] {$ 3 $} node[above=3pt] {$\begin{turn}{45} Task D \end{turn}$};
+    \draw (-1,0) node[below=3pt] {$ 4 $} node[above=3pt] {$\begin{turn}{45} Task E \end{turn}$};
+    \draw (0,0) node[below=3pt] {$ 5 $} node[above=3pt] {$\begin{turn}{45} \end{turn}$};
+    \draw (1,0) node[below=3pt] {$ 6 $} node[above=3pt] {$\begin{turn}{45} \end{turn}$};
+    \draw (2,0) node[below=3pt] {$ 7 $} node[above=3pt] {$\tiny \begin{turn}{75} \end{turn}$};
+    \draw (3,0) node[below=3pt] {$ 8 $} node[above=3pt] {$\begin{turn}{45} \end{turn}$};
+    \draw (6,0) node[below=3pt] {$ 11 $} node[above=3pt] {$\begin{turn}{45} Goal \end{turn}$};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{or make a table}
+\protect\hypertarget{or-make-a-table}{}
+\par
+
+\begin{center}
+\begin{tabular}{ c| c c}
+\hline
+    Method/Data & Same & Different \\ 
+\hline
+    Same & Reproducibility & Replicability\\ 
+    Different & Robustness  & Generalizability\\ 
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{or put an image}
+\protect\hypertarget{or-put-an-image}{}
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth,height=0.75\textheight]{rees-feature-850} 
+
+}
+
+\caption{caption goes here}\label{fig:unnamed-chunk-2}
+\end{figure}
+\end{frame}
+
+\begin{frame}{or an equation}
+\protect\hypertarget{or-an-equation}{}
+\begin{block}{For example... Hansen (2.48)} 
+$\begin{aligned} \beta &=\left(\mathbb{E}\left[X X^{\prime}\right]\right)^{-1} \mathbb{E}[X Y] \end{aligned}$
+\end{block}
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section}{}
+\begin{columns}
+\column{0.5\textwidth}
+- You can also do columns \par
+- This section goes right \par
+- See? 
+
+\column{0.5\textwidth}
+\begin{center} - This section goes left \par
+\end{center}
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth,height=0.5\textheight]{LO7Pg0M-_400x400} 
+
+}
+
+\caption{REES}\label{fig:unnamed-chunk-3}
+\end{figure}
+
+ \end{columns}
+\end{frame}
+
+\hypertarget{summary}{%
+\section{Summary}\label{summary}}
+
+\begin{frame}{Summary}
+\begin{enumerate}[<+->]
+\item
+  REES
+\item
+  is
+\item
+  best !
+\end{enumerate}
+\end{frame}
+
+\hypertarget{reference}{%
+\section{Reference}\label{reference}}
+
+\begin{frame}{Reference}
+\begin{itemize}
+\item
+  \href{https://www.ssc.wisc.edu/~bhansen/econometrics/Econometrics.pdf}{\underline{Hansen's Econometrics}}
+\item
+  \href{https://www.moqixu.com/faq/faq-how-to-have-a-better-meeting-with-your-phd-supervisor}{\underline{Moqi's Blog}}
+\end{itemize}
+\end{frame}
+
+\end{document}
